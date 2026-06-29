@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Care Eligibility Checker | Pioneer Home Health Services Inc.</title>
+<meta name="description" content="Answer a few quick questions to see whether home health care may be right for you or your loved one. Final eligibility is determined by your physician and an in-home assessment.">
+<meta name="theme-color" content="#1565A8">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="topbar"><div class="container">
+    <div class="topbar__left">
+      <span class="topbar__item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18184855303">(818) 485-5303</a></span>
+      <span class="topbar__item hide-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon–Fri, 9:00 AM – 5:30 PM</span>
+    </div>
+    <div class="topbar__left">
+      <span class="topbar__badge">24/7 On-Call Nurse</span>
+      <span class="topbar__item hide-sm"><a href="referral.html">Make a Referral</a></span>
+    </div>
+  </div></div>
+  <div class="container"><nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span class="brand__txt"><span class="brand__name">Pioneer</span><span class="brand__sub">Home Health Services Inc.</span></span></a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="faq.html">FAQ</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn--cyan" href="referral.html">Make a Referral</a></li>
+    </ul>
+    <div class="nav__cta"><a class="btn btn--cyan" href="referral.html">Make a Referral</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span></button></div>
+  </nav></div>
+</header>
+
+<main id="main">
+  <section class="page-hero page-hero--photo" style="--bg:url('assets/img/photos/therapy.jpg')">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / Eligibility Checker</div>
+      <h1>Home Care Eligibility Checker</h1>
+      <p>Answer five quick questions to see whether home health care may be a fit. This takes about a minute — and there’s no obligation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-card wizard" id="wizard">
+        <div class="wizard__bar" aria-hidden="true">
+          <span class="active"></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="step active" data-step="0">
+          <span class="eyebrow">Question 1 of 5</span>
+          <h2>Who is the care for?</h2>
+          <p class="text-muted">This helps us tailor the next steps.</p>
+          <div class="opts" data-key="who">
+            <button type="button" class="opt" data-val="Myself"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>Myself<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="A family member or friend"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></span>A family member or friend<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="A patient I'm discharging (provider)"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>A patient I’m discharging (I’m a provider)<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" data-step="1">
+          <span class="eyebrow">Question 2 of 5</span>
+          <h2>Is leaving home difficult without help?</h2>
+          <p class="text-muted">For example, needing assistance, a walker or wheelchair, or it being a taxing effort.</p>
+          <div class="opts" data-key="homebound">
+            <button type="button" class="opt" data-val="Yes">Yes, leaving home is difficult<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Sometimes">Sometimes / only with help<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="No">No, getting out is easy<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" data-step="2">
+          <span class="eyebrow">Question 3 of 5</span>
+          <h2>Is a physician involved?</h2>
+          <p class="text-muted">Home health care is provided under a physician’s direction and supervision.</p>
+          <div class="opts" data-key="physician">
+            <button type="button" class="opt" data-val="Yes">Yes, a physician is involved<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Not yet">Not yet, but we can get one<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Not sure">I’m not sure<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" data-step="3">
+          <span class="eyebrow">Question 4 of 5</span>
+          <h2>What kind of help is needed?</h2>
+          <p class="text-muted">Choose the closest match — we’ll confirm the details with you.</p>
+          <div class="opts" data-key="need">
+            <button type="button" class="opt" data-val="Skilled nursing">Skilled nursing (wound care, injections, IV, diabetic care…)<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Therapy">Rehab therapy (physical, occupational, speech)<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Personal care / aide">Personal care &amp; home health aide<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Not sure">I’m not sure yet<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step" data-step="4">
+          <span class="eyebrow">Question 5 of 5</span>
+          <h2>What’s the primary coverage?</h2>
+          <p class="text-muted">Approved services are covered 100% by Medicare and Medi-Cal.</p>
+          <div class="opts" data-key="coverage">
+            <button type="button" class="opt" data-val="Medicare">Medicare<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Medi-Cal">Medi-Cal<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Private insurance">Private insurance<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+            <button type="button" class="opt" data-val="Self-pay">Self-pay / Not sure<span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="step" data-step="5">
+          <div class="result-card">
+            <div class="result-badge result-badge--ok" id="resultBadge">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h2 id="resultTitle">Good news — home care may be a great fit</h2>
+            <p id="resultText" class="lead mx-auto"></p>
+            <div class="callout" style="text-align:left;max-width:560px;margin:1.4rem auto;">
+              <p id="resultSummary" style="margin:0"></p>
+            </div>
+            <p class="text-muted" style="font-size:.9rem;max-width:560px;margin-inline:auto;">This checker is for general guidance only and is not a determination of coverage or a medical opinion. Final eligibility is determined by your physician and a Pioneer in-home assessment.</p>
+            <div class="hero__cta" style="justify-content:center;margin-top:22px;">
+              <a class="btn btn--lg" id="resultCta" href="referral.html">Make a Referral</a>
+              <a class="btn btn--ghost btn--lg" href="tel:+18184855303">Call (818) 485-5303</a>
+            </div>
+            <button type="button" class="card__link" id="restartBtn" style="background:none;border:0;cursor:pointer;margin-top:18px;">↺ Start over</button>
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="wizard__nav" id="wizardNav">
+          <button type="button" class="btn btn--ghost" id="backBtn" disabled>← Back</button>
+          <span class="text-muted" id="stepHint" style="align-self:center;font-size:.85rem;">Select an option to continue</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand"><img src="assets/img/logo.svg" alt="" style="height:46px"><span class="brand__txt"><span class="brand__name">Pioneer</span><span class="brand__sub">Home Health Services Inc.</span></span></div>
+      <p>“Depend on us for quality home health care.” Serving Pacoima and the San Fernando Valley with safe, compassionate, cost-effective home health care.</p>
+    </div>
+    <div><h4>Explore</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="faq.html">FAQ</a><a href="careers.html">Careers</a><a href="referral.html">Make a Referral</a></div>
+    <div><h4>Compliance</h4><a href="compliance/privacy.html">Notice of Privacy Practices</a><a href="compliance/patient-rights.html">Patient Rights &amp; Responsibilities</a><a href="compliance/nondiscrimination.html">Non-Discrimination Notice</a><a href="compliance/accessibility.html">Accessibility Statement</a></div>
+    <div><h4>Contact</h4><ul class="footer-contact" style="list-style:none;padding:0;margin:0">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>13083 Van Nuys Blvd. Unit 1<br>Pacoima, CA 91331</span></li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18184855303">(818) 485-5303</a></li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:pioneerhomehealthservices@gmail.com">pioneerhomehealthservices@gmail.com</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span data-year>2026</span> Pioneer Home Health Services Inc. All rights reserved.</span>
+    <span class="footer-legal"><a href="compliance/privacy.html">Privacy</a><a href="compliance/nondiscrimination.html">Non-Discrimination</a><a href="compliance/accessibility.html">Accessibility</a></span>
+  </div>
+</div></footer>
+
+<script>
+/* Eligibility wizard (page-specific) */
+(function () {
+  var answers = {}, step = 0;
+  var TOTAL = 5;
+  var steps = document.querySelectorAll(".step");
+  var bars = document.querySelectorAll(".wizard__bar span");
+  var backBtn = document.getElementById("backBtn");
+  var hint = document.getElementById("stepHint");
+  var nav = document.getElementById("wizardNav");
+
+  function render() {
+    steps.forEach(function (s) { s.classList.toggle("active", +s.dataset.step === step); });
+    bars.forEach(function (b, i) {
+      b.classList.toggle("done", i < step);
+      b.classList.toggle("active", i === step);
+    });
+    backBtn.disabled = step === 0;
+    nav.style.display = step >= TOTAL ? "none" : "flex";
+    var current = document.querySelector('.step[data-step="' + step + '"] .opts');
+    if (current) {
+      var key = current.dataset.key;
+      hint.textContent = answers[key] ? "Selected: " + answers[key] : "Select an option to continue";
+    }
+    document.getElementById("wizard").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  document.querySelectorAll(".opts").forEach(function (group) {
+    group.addEventListener("click", function (e) {
+      var btn = e.target.closest(".opt");
+      if (!btn) return;
+      group.querySelectorAll(".opt").forEach(function (o) { o.classList.remove("selected"); });
+      btn.classList.add("selected");
+      answers[group.dataset.key] = btn.dataset.val;
+      setTimeout(function () {
+        if (step < TOTAL - 1) { step++; render(); }
+        else { step = TOTAL; computeResult(); render(); }
+      }, 280);
+    });
+  });
+
+  backBtn.addEventListener("click", function () { if (step > 0) { step = Math.min(step, TOTAL) - 1; render(); } });
+  document.getElementById("restartBtn").addEventListener("click", function () {
+    answers = {}; step = 0;
+    document.querySelectorAll(".opt.selected").forEach(function (o) { o.classList.remove("selected"); });
+    render();
+  });
+
+  function computeResult() {
+    var badge = document.getElementById("resultBadge");
+    var title = document.getElementById("resultTitle");
+    var text = document.getElementById("resultText");
+    var summary = document.getElementById("resultSummary");
+    var cta = document.getElementById("resultCta");
+
+    var strong = answers.homebound === "Yes" || answers.homebound === "Sometimes";
+    var covered = answers.coverage === "Medicare" || answers.coverage === "Medi-Cal";
+
+    if (strong) {
+      badge.className = "result-badge result-badge--ok";
+      title.textContent = "Good news — home care may be a great fit";
+      text.textContent = "Based on your answers, you or your loved one may be a strong candidate for home health care. Let’s confirm the details together.";
+    } else {
+      badge.className = "result-badge result-badge--info";
+      badge.innerHTML = '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>';
+      title.textContent = "Let’s talk through your options";
+      text.textContent = "Home care may still help even if leaving home isn’t difficult. A quick conversation will clarify what’s available to you.";
+    }
+
+    var bits = [];
+    bits.push("<strong>Your answers:</strong>");
+    bits.push("• Care for: " + (answers.who || "—"));
+    bits.push("• Leaving home is difficult: " + (answers.homebound || "—"));
+    bits.push("• Physician involved: " + (answers.physician || "—"));
+    bits.push("• Help needed: " + (answers.need || "—"));
+    bits.push("• Primary coverage: " + (answers.coverage || "—"));
+    if (covered) bits.push("• <strong>Approved services are covered 100% by " + answers.coverage + ".</strong>");
+    if (answers.physician !== "Yes") bits.push("• No physician yet? We can help coordinate the physician’s order.");
+    summary.innerHTML = bits.join("<br>");
+
+    // Pre-fill the referral form via query string
+    var params = new URLSearchParams();
+    if (answers.who === "A patient I'm discharging (provider)") params.set("role", "provider");
+    else if (answers.who === "A family member or friend") params.set("role", "family");
+    else params.set("role", "patient");
+    if (answers.need) params.set("need", answers.need);
+    if (answers.coverage) params.set("coverage", answers.coverage);
+    cta.href = "referral.html?" + params.toString();
+  }
+
+  render();
+})();
+</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

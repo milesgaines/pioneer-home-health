@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" role="img" aria-label="Caregiver supporting a patient at home">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF4FB"/><stop offset="1" stop-color="#D5EAF8"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1565A8"/><stop offset="1" stop-color="#29ABE2"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#F4F9FD"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="560" rx="28" fill="url(#bg)"/>
+
+  <!-- floating house badge -->
+  <g transform="translate(366,54)">
+    <rect x="-8" y="-8" width="220" height="150" rx="20" fill="#ffffff" opacity=".7"/>
+    <path d="M100 14 L168 66 L150 66 L100 30 L50 66 L32 66 Z" fill="url(#roof)"/>
+    <rect x="56" y="66" width="88" height="64" rx="9" fill="none" stroke="#1565A8" stroke-width="6"/>
+    <rect x="82" y="84" width="36" height="36" rx="5" fill="none" stroke="#1565A8" stroke-width="5"/>
+    <line x1="100" y1="84" x2="100" y2="120" stroke="#1565A8" stroke-width="5"/>
+    <line x1="82" y1="102" x2="118" y2="102" stroke="#1565A8" stroke-width="5"/>
+    <circle cx="150" cy="48" r="13" fill="#29ABE2"/>
+  </g>
+
+  <!-- caregiver (teal) -->
+  <g transform="translate(150,250)">
+    <circle cx="0" cy="0" r="46" fill="#1565A8"/>
+    <path d="M-70 190 q70 -120 140 0 Z" fill="#1565A8"/>
+    <path d="M-70 190 q70 -120 140 0 Z" fill="#1565A8"/>
+    <rect x="-70" y="120" width="140" height="80" rx="14" fill="#1565A8"/>
+    <!-- stethoscope -->
+    <path d="M-18 50 q-30 50 18 70 q48 -20 18 -70" fill="none" stroke="#9BE0FF" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="18" cy="126" r="9" fill="#29ABE2"/>
+  </g>
+
+  <!-- patient (cyan) -->
+  <g transform="translate(330,300)">
+    <circle cx="0" cy="0" r="40" fill="#29ABE2"/>
+    <rect x="-60" y="60" width="120" height="120" rx="14" fill="#29ABE2"/>
+    <path d="M-60 180 q60 -90 120 0 Z" fill="#29ABE2"/>
+  </g>
+
+  <!-- connecting heart -->
+  <g transform="translate(252,250)">
+    <path d="M0 18 C -22 -8 -54 6 -54 30 C -54 56 -16 74 0 92 C 16 74 54 56 54 30 C 54 6 22 -8 0 18 Z"
+          fill="#fff" stroke="#1565A8" stroke-width="5"/>
+    <path d="M-30 36 h16 l8 -14 l12 28 l8 -14 h16" fill="none" stroke="#29ABE2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- info card -->
+  <g transform="translate(40,440)">
+    <rect width="270" height="84" rx="16" fill="url(#card)" stroke="#DCE6EF"/>
+    <circle cx="42" cy="42" r="22" fill="#EAF4FB"/>
+    <path d="M34 42 l6 6 l12 -14" fill="none" stroke="#1565A8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="38" font-family="Inter,Arial" font-size="15" font-weight="700" fill="#0C3B61">Licensed &amp; Compassionate</text>
+    <text x="78" y="60" font-family="Inter,Arial" font-size="13" fill="#6B7B8C">Skilled care in your own home</text>
+  </g>
+</svg>
