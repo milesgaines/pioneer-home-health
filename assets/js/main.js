@@ -76,10 +76,14 @@
   })();
 
   /* ---------- FAQ accordion ---------- */
-  document.querySelectorAll(".faq__q").forEach(function (btn) {
+  document.querySelectorAll(".faq__q").forEach(function (btn, i) {
+    var item = btn.closest(".faq__item");
+    var ans = item.querySelector(".faq__a");
+    if (ans && !ans.id) { ans.id = "faq-panel-" + (i + 1); }
+    if (ans) { btn.setAttribute("aria-controls", ans.id); ans.setAttribute("role", "region"); }
+    var chev = btn.querySelector(".chev");
+    if (chev) chev.setAttribute("aria-hidden", "true");
     btn.addEventListener("click", function () {
-      var item = btn.closest(".faq__item");
-      var ans = item.querySelector(".faq__a");
       var isOpen = item.classList.toggle("open");
       btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
       ans.style.maxHeight = isOpen ? ans.scrollHeight + "px" : null;
@@ -154,7 +158,19 @@
   /* =======================================================
      FORMS — validation + real submission to Supabase
      ======================================================= */
-  function showErr(field, on) { field.classList.toggle("field--error", on); }
+  var _errId = 0;
+  function showErr(field, input, on) {
+    field.classList.toggle("field--error", on);
+    if (!input) return;
+    input.setAttribute("aria-invalid", on ? "true" : "false");
+    var span = field.querySelector(".field__err");
+    if (span) {
+      if (!span.id) span.id = "err-" + (++_errId);
+      span.setAttribute("role", "alert");
+      if (on) input.setAttribute("aria-describedby", span.id);
+      else input.removeAttribute("aria-describedby");
+    }
+  }
 
   function validateForm(form) {
     var ok = true;
@@ -166,7 +182,7 @@
       else if (input.type === "email") bad = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
       else if (input.type === "tel") bad = val.replace(/\D/g, "").length < 10;
       else bad = val === "";
-      if (field) showErr(field, bad);
+      if (field) showErr(field, input, bad);
       if (bad) ok = false;
     });
     return ok;
@@ -290,6 +306,9 @@
       var successMsg = form.dataset.success ||
         "Thank you — your request has been received. A Pioneer care coordinator will contact you within one business day.";
 
+      // Spam honeypot: a real user never fills the hidden "hp" field. Silently "succeed" without sending.
+      if (payload.hp) { done(successMsg); return; }
+
       // Store in Supabase (best effort) AND email the office. Success if either delivers.
       var storePromise = table ? submitToSupabase(table, payload).catch(function () { return false; })
                                 : Promise.resolve(false);
@@ -305,6 +324,8 @@
       input.addEventListener("input", function () {
         var field = input.closest(".field, .checkbox");
         if (field) field.classList.remove("field--error");
+        input.setAttribute("aria-invalid", "false");
+        input.removeAttribute("aria-describedby");
       });
     });
   });

@@ -12,7 +12,7 @@
   --brand-cyan-600:#2487B5;
 
   --gold:         #B08A4F;   /* champagne / antique gold accent */
-  --gold-deep:    #97743C;
+  --gold-deep:    #856734;   /* darkened to meet WCAG AA (4.5:1) as link/label text on white */
   --gold-soft:    #C9AE82;
   --gold-tint:    #F3EBDC;
 
@@ -23,7 +23,7 @@
 
   --ink:          #1E2630;   /* near-black, warm */
   --ink-soft:     #4B5560;
-  --muted:        #8A8472;   /* warm taupe */
+  --muted:        #6B6657;   /* warm taupe — darkened to meet WCAG AA for small text */
   --line:         #E7E0D2;   /* warm hairline */
   --line-cool:    #E4E9EC;
   --white:        #FFFFFF;
@@ -383,6 +383,9 @@ body.nav-open .nav__toggle span::after { transform: translateY(-7px) rotate(-45d
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
 .skip-link{position:absolute;left:-999px;top:0;background:#fff;color:var(--brand-blue);padding:10px 16px;border-radius:0 0 8px 0;z-index:200;font-weight:700;}
 .skip-link:focus{left:0;}
+/* Visible keyboard focus for all interactive elements (helps older keyboard/switch users) */
+:focus-visible{ outline:3px solid var(--brand-blue); outline-offset:2px; border-radius:4px; }
+.section--brand :focus-visible, .site-footer :focus-visible, .care-band :focus-visible, .page-hero :focus-visible{ outline-color: var(--gold-soft); }
 .prose p{max-width:72ch}
 .prose h2{margin-top:2.2rem}
 .prose h3{margin-top:1.6rem}
@@ -615,6 +618,8 @@ body.nav-open .nav__toggle span::after { transform: translateY(-7px) rotate(-45d
   .cta-band { padding: 34px 22px; }
   .form-card { padding: 24px 20px; }
   .topbar { display:none; }
+  /* Topbar hidden at this width — re-anchor the open mobile menu to the shorter header */
+  body.nav-open .nav__links { inset: var(--header-h) 0 auto 0; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero__badge { position: static; margin-top: 16px; max-width:none; }
   .hero__chip--tl { left: 10px; top: 10px; }

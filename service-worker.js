@@ -1,5 +1,5 @@
 /* Pioneer Home Health Services — service worker (offline support) */
-var CACHE = "pioneer-v5";
+var CACHE = "pioneer-v6";
 var ASSETS = [
   "./", "./index.html", "./about.html", "./services.html", "./eligibility.html",
   "./faq.html", "./careers.html", "./contact.html", "./referral.html", "./404.html",
