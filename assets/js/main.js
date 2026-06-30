@@ -62,7 +62,7 @@
     var fab = document.createElement("div");
     fab.className = "fab-stack";
     fab.innerHTML =
-      '<a class="fab fab--call" href="tel:+18184855303" aria-label="Call Pioneer Home Health Services">' +
+      '<a class="fab fab--call" href="tel:+13233991802" aria-label="Call Pioneer Home Health Services">' +
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>' +
         '<span>Call us</span></a>' +
       '<button class="fab fab--top" aria-label="Back to top" hidden>' +
@@ -297,7 +297,7 @@
         if (status) {
           status.className = "form-status show form-status--err";
           status.innerHTML = 'We couldn’t submit your request just now. Please call us at ' +
-            '<a href="tel:+18184855303">(818) 485-5303</a> or email ' +
+            '<a href="tel:+13233991802">(323) 399-1802</a> or email ' +
             '<a href="mailto:pioneerhomehealthservices@gmail.com">pioneerhomehealthservices@gmail.com</a>.';
           status.scrollIntoView({ behavior: "smooth", block: "center" });
         }
